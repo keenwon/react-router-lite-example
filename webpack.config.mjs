@@ -4,7 +4,6 @@ import webpack from 'webpack'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import WebpackBar from 'webpackbar'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -70,7 +69,6 @@ export default () => {
       new HtmlWebpackPlugin({
         template: '!!ejs-webpack-loader!./src/index.ejs',
       }),
-      new WebpackBar(),
       new ReactRefreshWebpackPlugin(),
     ],
     module: {
