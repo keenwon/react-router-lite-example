@@ -1,0 +1,6 @@
+# debug: npx browserslist
+
+iOS >= 13
+ChromeAndroid >= 80
+Chrome >= 80
+node >= 14

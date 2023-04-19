@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>react-router-lite example</title>
+
+  <% if (typeof styleTags !== 'undefined') { %>
+    <%- styleTags %>
+  <% } %>
+
+</head>
+
+<body>
+  <% if (typeof body !== 'undefined') { %>
+    <div id="root"><%- body %></div>
+  <% } %>
+
+  <% if (typeof body === 'undefined') { %>
+    <div id="root"></div>
+  <% } %>
+
+  <% if (typeof scriptTags !== 'undefined') { %>
+    <%- scriptTags %>
+  <% } %>
+
+</body>
+
+</html>
