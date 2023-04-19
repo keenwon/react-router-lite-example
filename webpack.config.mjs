@@ -14,6 +14,8 @@ const resolver = {
   alias: {
     '@typings': getAbsPath('typings'),
     '@views': getAbsPath('src/views'),
+    '@css': getAbsPath('src/css'),
+    '@components': getAbsPath('src/components'),
     '@router': getAbsPath('src/router/index.ts'),
   },
 }

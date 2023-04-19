@@ -1,5 +1,8 @@
 import React from 'react'
 
+import './app.less'
+import Nav from '@components/nav'
+
 import PageA from '@views/page-a'
 import PageB from '@views/page-b'
 import PageC from '@views/page-c'
@@ -11,7 +14,7 @@ import PageC from '@views/page-c'
 const App: React.FC<{}> = () => {
   return (
     <div>
-      <h2>react-router-lite example</h2>
+      <Nav />
       <PageA />
       <PageB />
       <PageC />
