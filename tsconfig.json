@@ -17,8 +17,8 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@views/*": ["./src/views/*"],
-      "@components": ["./src/components/*"],
-      "@css": ["./src/css/*"],
+      "@components/*": ["./src/components/*"],
+      "@css/*": ["./src/css/*"],
       "@router": ["./src/router/index.ts"]
     }
   },
