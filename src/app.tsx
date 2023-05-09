@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './app.less'
 import Nav from '@components/nav'
@@ -12,12 +12,15 @@ import PageC from '@views/page-c'
  */
 
 const App: React.FC<{}> = () => {
+  const [currentPageName, setCurrentPageName] = useState('page-a')
+
   return (
     <div>
-      <Nav />
-      <PageA />
-      <PageB />
-      <PageC />
+      <Nav redirect={(pageName) => setCurrentPageName(pageName)} />
+
+      {currentPageName === 'page-a' && <PageA />}
+      {currentPageName === 'page-b' && <PageB />}
+      {currentPageName === 'page-c' && <PageC />}
     </div>
   )
 }
